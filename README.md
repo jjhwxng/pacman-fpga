@@ -27,7 +27,7 @@ The game flow starts with USB keyboard input, which is read by MicroBlaze softwa
 <p align="center">
   <img src="docs/assets/maze-layout.png" alt="Pac-Man maze layout" width="400" />
   &nbsp;&nbsp;
-  <img src="docs/assets/pacman-direction-sprites.png" alt="Pac-Man direction sprites" width="250" />
+  <img src="docs/assets/pacman-direction-sprites.png" alt="Pac-Man direction sprites" width="400" />
 </p>
 
 The visual system uses ROM-backed assets for the maze layout and directional Pac-Man sprite states.
