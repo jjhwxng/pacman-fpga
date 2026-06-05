@@ -17,7 +17,7 @@ I contributed across the FPGA system integration and game implementation workflo
 ### System Architecture
 
 <p align="center">
-  <img src="docs/assets/system-architecture.png" alt="Pac-Man FPGA system architecture" width="900" />
+  <img src="docs/assets/system-architecture.png" alt="Pac-Man FPGA system architecture" width="600" />
 </p>
 
 The game flow starts with USB keyboard input, which is read by MicroBlaze software and passed into the SystemVerilog game-logic modules. These modules update Pac-Man movement, ghost behavior, pellets, collisions, and score state. The graphics pipeline then uses ROM-based maze and sprite assets to render each frame for HDMI output.
@@ -25,9 +25,9 @@ The game flow starts with USB keyboard input, which is read by MicroBlaze softwa
 ### Maze and Sprite Assets
 
 <p align="center">
-  <img src="docs/assets/maze-layout.png" alt="Pac-Man maze layout" width="280" />
+  <img src="docs/assets/maze-layout.png" alt="Pac-Man maze layout" width="400" />
   &nbsp;&nbsp;
-  <img src="docs/assets/pacman-direction-sprites.png" alt="Pac-Man direction sprites" width="340" />
+  <img src="docs/assets/pacman-direction-sprites.png" alt="Pac-Man direction sprites" width="250" />
 </p>
 
 The visual system uses ROM-backed assets for the maze layout and directional Pac-Man sprite states.
@@ -35,7 +35,7 @@ The visual system uses ROM-backed assets for the maze layout and directional Pac
 ### Ghost Sprites
 
 <p align="center">
-  <img src="docs/assets/ghost-sprites.png" alt="Ghost sprites" width="360" />
+  <img src="docs/assets/ghost-sprites.png" alt="Ghost sprites" width="250" />
 </p>
 
 Separate ghost sprite assets are used for enemy rendering and movement feedback in the game view.
