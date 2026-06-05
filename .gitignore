@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Generated build outputs
+*.jou
+*.log
+*.str
+*.cache
+*.runs
+*.sim
+*.hw
+*.bit
+*.mmi
+*.xsa
+*.elf
+*.o
+Debug/
+Release/
+
+# temp files
+*.tmp
