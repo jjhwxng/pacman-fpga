@@ -22,15 +22,21 @@ I contributed across the FPGA system integration and game implementation workflo
 
 The game flow starts with USB keyboard input, which is read by MicroBlaze software and passed into the SystemVerilog game-logic modules. These modules update Pac-Man movement, ghost behavior, pellets, collisions, and score state. The graphics pipeline then uses ROM-based maze and sprite assets to render each frame for HDMI output.
 
-### Maze and Sprite Assets
+### Maze Layout
 
 <p align="center">
   <img src="docs/assets/maze-layout.png" alt="Pac-Man maze layout" width="400" />
-  &nbsp;&nbsp;
+</p>
+
+The maze layout is stored as a ROM-backed visual asset and rendered through the FPGA graphics pipeline.
+
+### Pac-Man Direction Sprites
+
+<p align="center">
   <img src="docs/assets/pacman-direction-sprites.png" alt="Pac-Man direction sprites" width="380" />
 </p>
 
-The visual system uses ROM-backed assets for the maze layout and directional Pac-Man sprite states.
+Pac-Man uses separate directional sprites for movement states, allowing the displayed character to match the current keyboard-controlled direction.
 
 ### Ghost Sprites
 
